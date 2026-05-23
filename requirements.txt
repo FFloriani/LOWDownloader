@@ -1,0 +1,6 @@
+# Dependências do LOWDownloader
+
+yt-dlp          # Download de vídeos, clips e extração de metadados
+imageio-ffmpeg  # Provedor automático do binário compilado do ffmpeg/ffprobe
+pillow          # Processamento das imagens e thumbnails
+pywebview       # Interface desktop moderna e ultra-estilizada acelerada por hardware via HTML5/CSS/JS

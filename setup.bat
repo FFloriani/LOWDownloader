@@ -1,11 +1,11 @@
 @echo off
 setlocal EnableDelayedExpansion
-title Decreepy Downloader - Setup
+title LOWDownloader - Setup
 cd /d "%~dp0"
 
 echo.
 echo ============================================================
-echo   Decreepy Downloader - Setup
+echo   LOWDownloader - Setup
 echo ============================================================
 echo.
 
@@ -31,12 +31,12 @@ if errorlevel 1 (
 )
 echo [ok] yt-dlp instalado.
 
-REM --- ffmpeg via imageio-ffmpeg + Pillow (preview de frames) ---
+REM --- ffmpeg via imageio-ffmpeg + Pillow (preview de frames) + pywebview ---
 echo.
-echo [..] Instalando ffmpeg via imageio-ffmpeg e Pillow...
-python -m pip install --upgrade --quiet imageio-ffmpeg pillow
+echo [..] Instalando dependencias (imageio-ffmpeg, pillow, pywebview)...
+python -m pip install --upgrade --quiet imageio-ffmpeg pillow pywebview
 if errorlevel 1 (
-    echo [ERRO] Falha ao instalar imageio-ffmpeg / pillow.
+    echo [ERRO] Falha ao instalar dependencias.
     pause
     exit /b 1
 )
@@ -52,7 +52,7 @@ echo [ok] ffmpeg pronto.
 
 echo.
 echo ============================================================
-echo   Setup concluido. Rode "Decreepy Downloader.bat" para abrir.
+echo   Setup concluido. Rode "LOWDownloader.bat" para abrir.
 echo ============================================================
 echo.
 pause

@@ -1,4 +1,4 @@
-# Decreepy Downloader
+# LOWDownloader
 
 Ferramenta com interface grafica para baixar VODs / Clips da Twitch, videos do Facebook, YouTube e qualquer outro site suportado pelo `yt-dlp`. Pensada pra fluxo de edicao: cole a URL, escolha qualidade, opcionalmente recorte um trecho com preview de frames, baixa.
 
@@ -24,7 +24,7 @@ Se voce preferir um `ffmpeg` proprio, e so colocar `ffmpeg.exe` em `bin\` ou no 
 
 ## Uso
 
-Duplo clique em `Decreepy Downloader.bat`.
+Duplo clique em `LOWDownloader.bat`.
 
 1. **Cole a URL** — Twitch (`twitch.tv/videos/...`), Facebook (`facebook.com/watch?v=...`, `facebook.com/USER/videos/...`, `fb.watch/...`), YouTube ou outro.
 2. Clique **Verificar** — aparece a thumbnail do video, titulo, canal e duracao.
@@ -51,9 +51,9 @@ A Twitch muda coisa no backend de tempos em tempos. Se algum dia parar de funcio
 ## Estrutura
 
 ```
-Decreepy Downloader/
-├── decreepy.pyw              # GUI principal
-├── Decreepy Downloader.bat   # launcher
+LOWDownloader/
+├── lowdownloader.pyw         # GUI principal
+├── LOWDownloader.bat         # launcher
 ├── setup.bat                 # instala dependencias
 ├── bin/
 │   ├── ffmpeg.exe
